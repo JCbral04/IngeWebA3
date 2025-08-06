@@ -1,14 +1,114 @@
 # IngeWebA3
 
-Repositorio para los trabajos individuales de la asignatura de Ingeniería Web I.
+Repositorio de GitHub para el trabajo individual de la asignatura de Ingeniería Web I.
 
-## Reflexión sobre el ejercicio
+## Tema del proyecto
 
-Este ejercicio permitió poner en práctica conceptos fundamentales de la ingeniería web, como la estructura semántica con HTML5, el modelo cliente-servidor, y la organización de archivos dentro de un proyecto web. 
+**Construcción de una Web Informativa Semántica**
 
-Desarrollar esta página educativa me ayudó a comprender la importancia de mantener un código limpio, comprensible y estructurado, siguiendo principios de buenas prácticas y accesibilidad. Además, reforzó el uso de herramientas modernas como GitHub para el control de versiones y colaboración.
+Este repositorio contiene una página principal informativa sobre los Fundamentos de la Web Moderna, elaborada con HTML5 siguiendo las buenas prácticas de semántica y accesibilidad. Está dividida en secciones sobre:
 
-## 🗂 Justificación de la estructura del proyecto
+- Historia de la ingeniería web (en `index.html`)
+- ¿Qué es la ingeniería web? (`ingenieriaweb.html`)
+- Arquitectura cliente-servidor (`clienteservidor.html`)
+- Semántica y accesibilidad en HTML5 (`html5.html`)
 
-El proyecto está organizado siguiendo una estructura típica en el desarrollo web profesional:
+## Reflexión individual
 
+Durante el desarrollo de esta actividad entendi que organizar de manera semantica me ayuda a tener una mejor estructura y orden en el codigo, ademas de esto entendi que esto me facilita la accesibilidad, el posicionamiento web, y la comprensión del sitio por parte de otros desarrolladores.
+
+Aprendi el uso y la importacia de utilizar algunas etiquetas como `<header>`, `<main>`, `<section>` y `<footer>` ya que no solo es una cuestión estética, sino que responde a una necesidad de mantener el orden y la lógica de los componentes en el desarrollo de una pagina web.
+
+También aprendí a organizar archivos y carpetas dentro de un proyecto web, y a subirlos correctamente a un repositorio GitHub con control de versiones, lo cual es fundamental para trabajar de forma profesional.
+
+## Estructura del proyecto
+/IngeWebA3/
+├── index.html
+├── ingenieriaweb.html
+├── clienteservidor.html
+├── html5.html
+├── /css/
+│ └── styles.css
+├── /js/
+│ └── script.js
+└── /docs/
+  └── diagrama-estructura.png
+ 
+Explicación:
+
+- `index.html`: Página principal con la historia de la ingeniería web.
+- Los demás archivos `.html` contienen explicaciones específicas según el tema.
+- Las carpetas `/css/`, `/js/` y `/docs/` permiten separar estilos, scripts y documentación gráfica.
+- El archivo `README.md` documenta todo el proyecto, su estructura y cómo ejecutarlo.
+
+## Cómo clonar y visualizar el proyecto desde GitHub
+
+### ¿Qué significa clonar un repositorio?
+
+Clonar un repositorio es el proceso de copiar todo el contenido de un proyecto desde GitHub a tu computador local. Esto te permite:
+
+- Ver, modificar y ejecutar los archivos del proyecto
+- Trabajar localmente sin conexión permanente a internet
+- Enviar cambios al repositorio remoto (si tienes permisos)
+
+### Requisitos previos
+
+1. Tener Git instalado:
+   - Verifica con `git --version`
+   - Si no lo tienes, descárgalo desde https://git-scm.com
+
+2. Acceso a internet y navegador para obtener la URL del repositorio
+
+3. Un editor de código recomendado: Visual Studio Code (https://code.visualstudio.com)
+
+---
+
+### Cómo clonar el repositorio en Linux
+
+1. Abre la terminal (Ctrl + Alt + T o búscala en el menú de aplicaciones)
+
+2. Verifica si Git está instalado:
+   
+   git --version
+
+Si no lo esta, instala con:
+ sudo apt update
+ sudo apt install git
+ 
+3. Elige una carpeta para clonar el proyecto:
+    cd Documentos
+Si no sabes como ver las carpetas desde el terminal utiliza el comando ls el cual visualiza las carpetas
+
+4. Copia la URL del repositorio desde GitHub:
+   - Entra a https://github.com/JCbriol04/IngeWebA3
+   - Haz clic en el botón "Code" y copia el enlace HTTPS
+5. Clona el repositorio:
+   git clone https://github.com/JCbriol04/IngeWebA3.git
+   
+7. Accede a la carpeta del proyecto:
+   cd IngeWebA3
+8. Abre el archivo index.html en el navegador:
+   xdg-open index.html
+   
+### Cómo clonar el repositorio en Windows
+1. Instala Git desde: https://git-scm.com/download/win
+2. Abre el programa Git Bash (viene incluido con Git)
+3. Elige una carpeta de destino, por ejemplo:
+   cd /c/Users/TuUsuario/Documentos
+4. Copia la URL del repositorio desde GitHub:
+   - Entra a https://github.com/JCbriol04/IngeWebA3
+   - Haz clic en "Code" y copia el enlace HTTPS
+5. Clona el repositorio:
+   git clone https://github.com/JCbriol04/IngeWebA3.git
+6. Accede al proyecto:
+   cd IngeWebA3
+8. Abre index.html en tu navegador con doble clic o usa Visual Studio Code:
+   code .
+### Reflexión en equipo
+## ¿Por qué organizar de forma semántica los contenidos facilita el trabajo colaborativo y el mantenimiento del sitio?
+Porque permite que cualquier miembro del equipo entienda fácilmente la estructura y el propósito de cada parte del documento. Las etiquetas semánticas describen el contenido de manera clara y hacen que el código sea más legible, tanto para personas como para máquinas.
+
+##Tres ventajas observadas del uso de HTML5 moderno:
+1. Mejora la accesibilidad para todos los usuarios, incluyendo personas con discapacidad.
+2. Facilita el posicionamiento en buscadores gracias a su estructura clara.
+3. Hace el código más limpio, ordenado y fácil de mantener.
