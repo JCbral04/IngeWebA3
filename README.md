@@ -155,4 +155,3 @@ En una arquitectura web moderna, **el cliente** (navegador) se encarga de mostra
 
 ---
 
-### Estructura del proyecto (Guía 2)
