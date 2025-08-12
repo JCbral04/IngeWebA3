@@ -1,6 +1,6 @@
 # IngeWebA3
 
-Repositorio de GitHub para el trabajo individual de la asignatura de Ingeniería Web I.
+### Repositorio de GitHub para el trabajo individual de la asignatura de Ingeniería Web I.
 
 ## Cómo clonar y visualizar el proyecto desde GitHub
 
@@ -30,14 +30,14 @@ Clonar un repositorio es el proceso de copiar todo el contenido de un proyecto d
 
 2. Verifica si Git está instalado:
    
-   git --version
+   `git --version`
 
 Si no lo esta, instala con:
- sudo apt update
- sudo apt install git
+ `sudo apt update`
+ `sudo apt install git`
  
 3. Elige una carpeta para clonar el proyecto:
-    cd Documentos
+    `cd Documentos`
 Si no sabes como ver las carpetas desde el terminal utiliza el comando ls el cual visualiza las carpetas
 
 4. Copia la URL del repositorio desde GitHub:
@@ -47,24 +47,24 @@ Si no sabes como ver las carpetas desde el terminal utiliza el comando ls el cua
    git clone https://github.com/JCbriol04/IngeWebA3.git
    
 7. Accede a la carpeta del proyecto:
-   cd IngeWebA3
+   `cd IngeWebA3`
 8. Abre el archivo index.html en el navegador:
-   xdg-open index.html
+   `xdg-open index.html`
    
 ### Cómo clonar el repositorio en Windows
 1. Instala Git desde: https://git-scm.com/download/win
 2. Abre el programa Git Bash (viene incluido con Git)
 3. Elige una carpeta de destino, por ejemplo:
-   cd /c/Users/TuUsuario/Documentos
+  ` cd /c/Users/TuUsuario/Documentos`
 4. Copia la URL del repositorio desde GitHub:
    - Entra a https://github.com/JCbriol04/IngeWebA3
    - Haz clic en "Code" y copia el enlace HTTPS
 5. Clona el repositorio:
-   git clone https://github.com/JCbriol04/IngeWebA3.git
+   `git clone https://github.com/JCbriol04/IngeWebA3.git`
 6. Accede al proyecto:
-   cd IngeWebA3
+   `cd IngeWebA3`
 8. Abre index.html en tu navegador con doble clic o usa Visual Studio Code:
-   code .
+  ` code .`
 
 ## Guia 1 ingenieria web:
 
@@ -119,6 +119,40 @@ Porque permite que cualquier miembro del equipo entienda fácilmente la estructu
 2. Facilita el posicionamiento en buscadores gracias a su estructura clara.
 3. Hace el código más limpio, ordenado y fácil de mantener.
 
-## Guia 2 ingenieria web:
+## Guía 2 - Ingeniería Web
 
-## Tema del proyecto
+### Tema del proyecto
+**Estructura básica de un proyecto web profesional y separación cliente-servidor**
+
+Este proyecto tiene como objetivo aplicar las buenas prácticas de organización de un proyecto web, utilizando HTML5, CSS y JavaScript, así como comprender la importancia de la separación entre cliente y servidor en el desarrollo web moderno.
+
+---
+
+### Propósito y ventajas de la estructura usada
+La estructura propuesta sigue un modelo profesional, separando de forma clara los recursos del proyecto:
+
+- **/css** → Contiene las hojas de estilo, lo que facilita mantener y modificar la apariencia sin afectar la estructura HTML.
+- **/js** → Archivos JavaScript para la funcionalidad y comportamiento de la página.
+- **/assets** → Recursos como imágenes y tipografías, organizados para un acceso rápido.
+- **/docs** → Documentación y diagramas que describen la arquitectura del proyecto.
+- **index.html** → Archivo principal que sirve como punto de entrada.
+
+**Ventajas:**
+1. Facilita el trabajo colaborativo, ya que cada área (estructura, estilo, funcionalidad) está claramente delimitada.
+2. Mejora el mantenimiento y escalabilidad del proyecto.
+3. Permite que otros desarrolladores comprendan rápidamente dónde encontrar y modificar cada parte del sistema.
+
+---
+
+### Importancia de la separación cliente-servidor
+En una arquitectura web moderna, **el cliente** (navegador) se encarga de mostrar la interfaz y manejar la interacción del usuario, mientras que **el servidor** procesa solicitudes, gestiona datos y devuelve respuestas.
+
+**Beneficios de esta separación:**
+- **Seguridad:** el código y datos sensibles permanecen en el servidor.
+- **Eficiencia:** el servidor procesa y entrega solo lo necesario, optimizando la carga.
+- **Escalabilidad:** se pueden modificar la interfaz o la lógica de servidor sin afectar la otra parte.
+- **Flexibilidad tecnológica:** el cliente y el servidor pueden desarrollarse con tecnologías distintas.
+
+---
+
+### Estructura del proyecto (Guía 2)
