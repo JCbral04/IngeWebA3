@@ -10,11 +10,11 @@ Este proyecto tiene como objetivo aplicar las buenas prácticas de organización
 ### Propósito y ventajas de la estructura usada
 La estructura propuesta sigue un modelo profesional, separando de forma clara los recursos del proyecto:
 
-- **/css** → Contiene las hojas de estilo, lo que facilita mantener y modificar la apariencia sin afectar la estructura HTML.
-- **/js** → Archivos JavaScript para la funcionalidad y comportamiento de la página.
-- **/assets** → Recursos como imágenes y tipografías, organizados para un acceso rápido.
-- **/docs** → Documentación y diagramas que describen la arquitectura del proyecto.
-- **index.html** → Archivo principal que sirve como punto de entrada.
+- **`/css`** → Contiene las hojas de estilo, lo que facilita mantener y modificar la apariencia sin afectar la estructura HTML.
+- **`/js`** → Archivos JavaScript para la funcionalidad y comportamiento de la página.
+- **`/assets`** → Recursos como imágenes y tipografías, organizados para un acceso rápido.
+- **`/docs`** → Documentación y diagramas que describen la arquitectura del proyecto.
+- **`index.html`** → Archivo principal que sirve como punto de entrada.
 
 **Ventajas:**
 1. Facilita el trabajo colaborativo, ya que cada área (estructura, estilo, funcionalidad) está claramente delimitada.
