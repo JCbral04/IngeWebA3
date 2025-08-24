@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Interactiva Completa</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fundamentos de Programación</h1>
+            <p class="intro">Bienvenido a nuestra guía de programación interactiva. Completa los tres retos en orden para desbloquear un mensaje especial. ¡Pon a prueba tus habilidades de programación!</p>
+        </header>
+
+        <main>
+            <div class="challenges-container">
+                <!-- Reto 1: Función suma -->
+                <div class="challenge-card" id="challenge1">
+                    <div class="challenge-header">
+                        <h2>Reto 1: Función Suma</h2>
+                        <span class="challenge-status unlocked">🔓</span>
+                    </div>
+                    <div class="challenge-content">
+                        <p>Escribe una función en JavaScript que sume dos números:</p>
+                        <div class="code-example">
+                            <code>function suma(a, b) {<br>
+                            &nbsp;&nbsp;// Tu código aquí<br>
+                            }</code>
+                        </div>
+                        <textarea id="code1" placeholder="Escribe tu función aquí..." rows="4"></textarea>
+                        <button id="submit1" class="submit-btn">Verificar Solución</button>
+                        <div id="result1" class="result"></div>
+                    </div>
+                </div>
+
+                <!-- Reto 2: Números pares -->
+                <div class="challenge-card locked" id="challenge2">
+                    <div class="challenge-header">
+                        <h2>Reto 2: Números Pares</h2>
+                        <span class="challenge-status locked">🔒</span>
+                    </div>
+                    <div class="challenge-content">
+                        <p>Escribe código que genere un array con los números pares del 1 al 10:</p>
+                        <div class="code-example">
+                            <code>// Debe retornar [2, 4, 6, 8, 10]</code>
+                        </div>
+                        <textarea id="code2" placeholder="Escribe tu código aquí..." rows="4" disabled></textarea>
+                        <button id="submit2" class="submit-btn" disabled>Verificar Solución</button>
+                        <div id="result2" class="result"></div>
+                    </div>
+                </div>
+
+                <!-- Reto 3: Palíndromo -->
+                <div class="challenge-card locked" id="challenge3">
+                    <div class="challenge-header">
+                        <h2>Reto 3: Detector de Palíndromo</h2>
+                        <span class="challenge-status locked">🔒</span>
+                    </div>
+                    <div class="challenge-content">
+                        <p>Escribe una función que determine si una palabra es palíndromo:</p>
+                        <div class="code-example">
+                            <code>function esPalindromo(palabra) {<br>
+                            &nbsp;&nbsp;// Tu código aquí<br>
+                            }</code>
+                        </div>
+                        <textarea id="code3" placeholder="Escribe tu función aquí..." rows="4" disabled></textarea>
+                        <button id="submit3" class="submit-btn" disabled>Verificar Solución</button>
+                        <div id="result3" class="result"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mensaje secreto -->
+            <div class="secret-message hidden" id="secretMessage">
+                <div class="secret-content">
+                    <h2>🎉 ¡Felicidades! 🎉</h2>
+                    <p>Has completado todos los retos de la Guía Interactiva Completa.</p>
+                    <p class="motivational">
+                        "El código no es solo instrucciones para la máquina, es la expresión de tu creatividad y lógica. 
+                        Cada línea que escribes es un paso más hacia convertirte en un mejor programador. 
+                        ¡Sigue practicando y nunca dejes de aprender!"
+                    </p>
+                    <div class="celebration">✨ ¡Eres increíble! ✨</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+    
+    <!-- Script del Agente DOM Secreto -->
+    <script>
+        // Variables booleanas para las tres condiciones
+        let condicion1_cumplida = false;
+        let condicion2_cumplida = false;
+        let condicion3_cumplida = false;
+        let agenteActivado = false;
+        
+        // Función para verificar si todas las condiciones están cumplidas
+        function verificarCondiciones() {
+            console.log('🔍 Verificando condiciones:', {
+                condicion1: condicion1_cumplida,
+                condicion2: condicion2_cumplida,
+                condicion3: condicion3_cumplida,
+                agenteActivado: agenteActivado
+            });
+            
+            if (condicion1_cumplida && condicion2_cumplida && condicion3_cumplida && !agenteActivado) {
+                activarAgente();
+            }
+        }
+        
+        // Función que activa el agente DOM
+        function activarAgente() {
+            agenteActivado = true;
+            console.log('🚨 ACTIVANDO AGENTE DOM...');
+            
+            // Cambiar el título principal
+            const titulo = document.querySelector('h1');
+            if (titulo) {
+                titulo.style.backgroundColor = '#FFD700';
+                titulo.style.color = '#000000';
+                titulo.style.padding = '10px';
+                console.log('✅ Título modificado');
+            }
+            
+            // Crear y añadir el mensaje de misión cumplida
+            const mensajeMision = document.createElement('p');
+            mensajeMision.textContent = 'Misión Cumplida: Agente DOM activado.';
+            mensajeMision.style.fontWeight = 'bold';
+            mensajeMision.style.color = '#15803d';
+            mensajeMision.style.marginTop = '15px';
+            mensajeMision.style.fontSize = '18px';
+            mensajeMision.style.textAlign = 'center';
+            
+            // Insertar después del título
+            titulo.parentNode.insertBefore(mensajeMision, titulo.nextSibling);
+            console.log('✅ Mensaje de misión insertado');
+            
+            console.log('🎉 AGENTE DOM ACTIVADO EXITOSAMENTE!');
+        }
+        
+        // Función para verificar si un reto está completado
+        function verificarReto(numeroReto) {
+            const resultDiv = document.getElementById(`result${numeroReto}`);
+            if (resultDiv && resultDiv.classList.contains('success')) {
+                return true;
+            }
+            
+            // Verificación alternativa por contenido del texto
+            if (resultDiv && resultDiv.textContent.includes('Excelente') || 
+                resultDiv.textContent.includes('Perfecto') || 
+                resultDiv.textContent.includes('Increíble')) {
+                return true;
+            }
+            
+            return false;
+        }
+        
+        // Event listeners para monitorear las condiciones
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🎮 Agente DOM inicializado - Esperando interacciones...');
+            
+            // Verificación periódica cada 500ms
+            setInterval(() => {
+                let cambios = false;
+                
+                if (!condicion1_cumplida && verificarReto(1)) {
+                    condicion1_cumplida = true;
+                    console.log('✅ Condición 1 cumplida');
+                    cambios = true;
+                }
+                
+                if (!condicion2_cumplida && verificarReto(2)) {
+                    condicion2_cumplida = true;
+                    console.log('✅ Condición 2 cumplida');
+                    cambios = true;
+                }
+                
+                if (!condicion3_cumplida && verificarReto(3)) {
+                    condicion3_cumplida = true;
+                    console.log('✅ Condición 3 cumplida');
+                    cambios = true;
+                }
+                
+                if (cambios) {
+                    verificarCondiciones();
+                }
+            }, 500);
+            
+            // Event listeners adicionales para los botones
+            ['submit1', 'submit2', 'submit3'].forEach((buttonId, index) => {
+                const button = document.getElementById(buttonId);
+                if (button) {
+                    button.addEventListener('click', function() {
+                        console.log(`🔘 Botón ${buttonId} presionado`);
+                        setTimeout(() => {
+                            verificarCondiciones();
+                        }, 1000);
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
