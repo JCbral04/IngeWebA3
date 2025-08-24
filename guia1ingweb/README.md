@@ -1,4 +1,4 @@
-## Guia 1 ingenieria web:
+# Guia 1 ingenieria web:
 
 ## Tema del proyecto
 
@@ -20,6 +20,7 @@ Aprendi el uso y la importacia de utilizar algunas etiquetas como `<header>`, `<
 También aprendí a organizar archivos y carpetas dentro de un proyecto web, y a subirlos correctamente a un repositorio GitHub con control de versiones, lo cual es fundamental para trabajar de forma profesional.
 
 ## Estructura del proyecto
+```
 /IngeWebA3/
 ├── index.html
 ├── ingenieriaweb.html
@@ -31,13 +32,13 @@ También aprendí a organizar archivos y carpetas dentro de un proyecto web, y a
 │ └── script.js
 └── /docs/
   └── diagrama-estructura.png
- 
+ ```
 Explicación:
 
-- `index.html`: Página principal con la historia de la ingeniería web.
-- Los demás archivos `.html` contienen explicaciones específicas según el tema.
-- Las carpetas `/css/`, `/js/` y `/docs/` permiten separar estilos, scripts y documentación gráfica.
-- El archivo `README.md` documenta todo el proyecto, su estructura y cómo ejecutarlo.
+- **`index.html`**: Página principal con la historia de la ingeniería web.
+- Los demás archivos **`.html`** contienen explicaciones específicas según el tema.
+- Las carpetas **`/css/`**, **`/js/`** y **`/docs/`** permiten separar estilos, scripts y documentación gráfica.
+- El archivo **`README.md`** documenta todo el proyecto, su estructura y cómo ejecutarlo.
 
 
 ### Reflexión en equipo
