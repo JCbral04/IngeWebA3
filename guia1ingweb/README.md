@@ -47,7 +47,7 @@ Porque permite que cualquier miembro del equipo entienda fácilmente la estructu
 
 
 
-##Tres ventajas observadas del uso de HTML5 moderno:
+## Tres ventajas observadas del uso de HTML5 moderno:
 1. Mejora la accesibilidad para todos los usuarios, incluyendo personas con discapacidad.
 2. Facilita el posicionamiento en buscadores gracias a su estructura clara.
 3. Hace el código más limpio, ordenado y fácil de mantener.
