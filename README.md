@@ -55,7 +55,7 @@ Clonar un repositorio es el proceso de copiar todo el contenido de un proyecto d
    ls
    ```
 4. Copia la URL del repositorio desde GitHub:
-   - Entra a [https://github.com/JCbriol04/IngeWebA3](https://github.com/JCbriol04/IngeWebA3)
+   - Entra a [https://github.com/JCbral04/IngeWebA3](https://github.com/JCbral04/IngeWebA3)
    - Haz clic en el botón **Code** y copia el enlace HTTPS
 5. Clona el repositorio:
    ```bash
@@ -81,7 +81,7 @@ Clonar un repositorio es el proceso de copiar todo el contenido de un proyecto d
    cd /c/Users/TuUsuario/Documentos
    ```
 4. Copia la URL del repositorio desde GitHub:
-   - Entra a [https://github.com/JCbriol04/IngeWebA3](https://github.com/JCbriol04/IngeWebA3)
+   - Entra a [https://github.com/JCbral04/IngeWebA3](https://github.com/JCbral04/IngeWebA3)
    - Haz clic en **Code** y copia el enlace HTTPS
 5. Clona el repositorio:
    ```bash
