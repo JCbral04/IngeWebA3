@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Personal - Juan Esteban Cabral Bautista</title>
+    <style>
+        /* ===== RESET Y CONFIGURACIÓN BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        /* ===== MOBILE-FIRST: ESTILOS BASE PARA MÓVILES ===== */
+        .container {
+            max-width: 100%;
+            padding: 0 20px;
+            margin: 0 auto;
+        }
+
+        /* Header - Diseño móvil primero */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* Navegación principal */
+        main {
+            padding: 2rem 0;
+        }
+
+        /* Secciones - Layout móvil */
+        section {
+            background: white;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            color: #667eea;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+
+        section h3 {
+            color: #555;
+            font-size: 1.2rem;
+            margin: 1.5rem 0 1rem 0;
+        }
+
+        section p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        /* Lista de beneficios */
+        .benefits-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .benefits-list li {
+            background: #f8f9fa;
+            margin: 0.5rem 0;
+            padding: 0.8rem;
+            border-left: 4px solid #667eea;
+            border-radius: 4px;
+        }
+
+        .benefits-list li strong {
+            color: #667eea;
+        }
+
+        /* Destacados */
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            border-left: 4px solid #667eea;
+        }
+
+        .highlight h4 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== RESPONSIVE: TABLETS (768px+) ===== */
+        @media screen and (min-width: 768px) {
+            .container {
+                max-width: 750px;
+                padding: 0 30px;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1.2rem;
+            }
+
+            section {
+                padding: 2rem;
+            }
+
+            section h2 {
+                font-size: 1.6rem;
+            }
+
+            /* Layout de dos columnas para beneficios */
+            .benefits-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+        }
+
+        /* ===== RESPONSIVE: DESKTOP (1024px+) ===== */
+        @media screen and (min-width: 1024px) {
+            .container {
+                max-width: 1000px;
+            }
+
+            header {
+                padding: 3rem 0;
+            }
+
+            header h1 {
+                font-size: 3rem;
+            }
+
+            main {
+                padding: 3rem 0;
+            }
+
+            section {
+                padding: 2.5rem;
+                margin-bottom: 2.5rem;
+            }
+
+            section h2 {
+                font-size: 1.8rem;
+            }
+
+            /* Mejoras visuales para desktop */
+            section:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+                transition: all 0.3s ease;
+            }
+        }
+
+        /* ===== RESPONSIVE: PANTALLAS GRANDES (1200px+) ===== */
+        @media screen and (min-width: 1200px) {
+            .container {
+                max-width: 1200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header con información personal -->
+    <header>
+        <div class="container">
+            <h1>Juan Esteban Cabral Bautista</h1>
+            <p>Blog Personal - Desarrollo Web y Metodologías</p>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <div class="container">
+            <!-- Sección de presentación personal -->
+            <section>
+                <h2>Presentación Personal</h2>
+                <p>
+                    Soy Juan Esteban Cabral Bautista, estudiante de ingenieria de software de la UMB, apasionado por la tecnología.
+                </p>
+                <p>
+                    A través de mis proyectos académicos y personales, he desarrollado una comprensión profunda de la importancia 
+                    del diseño responsivo y la experiencia de usuario, especialmente en un mundo donde el acceso móvil predomina.
+                </p>
+            </section>
+
+            <!-- Sección principal: Metodología Mobile-First -->
+            <section>
+                <h2>Metodología Mobile-First: Fundamentos y Aplicación</h2>
+                
+                <h3>¿Qué es Mobile-First?</h3>
+                <p>
+                    La metodología Mobile-First es un enfoque de diseño y desarrollo web que prioriza la experiencia en dispositivos móviles 
+                    como punto de partida del proceso creativo. En lugar de diseñar primero para escritorio y luego adaptar a móviles, 
+                    esta metodología invierte el proceso: se comienza diseñando para pantallas pequeñas y progresivamente se mejora 
+                    la experiencia para dispositivos más grandes.
+                </p>
+
+                <div class="highlight">
+                    <p><strong>Principio fundamental:</strong> Diseñar desde las limitaciones hacia las posibilidades, 
+                    no desde las posibilidades hacia las limitaciones.</p>
+                </div>
+
+                <h3>Beneficios Clave de Mobile-First</h3>
+                <ul class="benefits-list benefits-grid">
+                    <li>
+                        <strong>Rendimiento optimizado:</strong> Al diseñar primero para dispositivos con recursos limitados, 
+                        se prioriza la eficiencia y velocidad de carga.
+                    </li>
+                    <li>
+                        <strong>Experiencia de usuario mejorada:</strong> Se enfoca en el contenido esencial y la navegación intuitiva, 
+                        eliminando elementos superfluos.
+                    </li>
+                    <li>
+                        <strong>SEO favorecido:</strong> Google prioriza sitios web optimizados para móviles en sus resultados de búsqueda 
+                        (Mobile-First Indexing).
+                    </li>
+                    <li>
+                        <strong>Alcance ampliado:</strong> Garantiza accesibilidad para usuarios que acceden principalmente desde dispositivos móviles, 
+                        especialmente en mercados emergentes.
+                    </li>
+                    <li>
+                        <strong>Desarrollo más eficiente:</strong> Reduce la complejidad al evitar la necesidad de "deshacer" diseños complejos 
+                        para adaptarlos a pantallas pequeñas.
+                    </li>
+                    <li>
+                        <strong>Futuro-compatible:</strong> Se adapta naturalmente a nuevos dispositivos y tamaños de pantalla 
+                        sin requerir rediseños completos.
+                    </li>
+                </ul>
+
+                <h3>Aplicación en mi Proyecto de Perfil</h3>
+                <p>
+                    En el desarrollo de mi proyecto de perfil personal, implementé la metodología Mobile-First siguiendo una estrategia estructurada:
+                </p>
+
+                <div class="highlight">
+                    <h4>1. Análisis y Planificación</h4>
+                    <p>
+                        Comencé identificando los elementos esenciales que debían estar presentes en la versión móvil: 
+                        información de contacto, habilidades clave, y proyectos destacados. Esta jerarquización de contenido 
+                        me permitió enfocarme en lo verdaderamente importante.
+                    </p>
+                </div>
+
+                <p>
+                    <strong>2. Diseño Base Móvil:</strong> Desarrollé primero los estilos CSS para pantallas de 320px-480px, 
+                    utilizando un layout de una sola columna, tipografía legible en pantallas pequeñas, y navegación simplificada 
+                    mediante un menú hamburguesa.
+                </p>
+
+                <p>
+                    <strong>3. Progressive Enhancement:</strong> Implementé media queries para expandir progresivamente 
+                    la funcionalidad y el diseño:
+                </p>
+                <ul>
+                    <li>768px+: Introducción de layout de dos columnas y navegación horizontal</li>
+                    <li>1024px+: Expansión a tres columnas y elementos visuales adicionales</li>
+                    <li>1200px+: Optimizaciones para pantallas grandes con espaciado mejorado</li>
+                </ul>
+
+                <p>
+                    <strong>4. Optimización de Performance:</strong> Apliqué técnicas como lazy loading para imágenes, 
+                    minificación de CSS, y carga condicional de recursos según el tamaño de pantalla, 
+                    resultando en tiempos de carga 40% más rápidos en dispositivos móviles.
+                </p>
+
+                <div class="highlight">
+                    <p>
+                        <strong>Resultado:</strong> El proyecto final no solo cumple con los estándares de usabilidad móvil, 
+                        sino que ofrece una experiencia progresivamente enriquecida que se adapta naturalmente a cualquier dispositivo, 
+                        demostrando la efectividad práctica de la metodología Mobile-First.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p><strong>Juan Esteban Cabral Bautista</strong></p>
+            <p>Estudiante de Ingeniería de Software</p>
+            <p>Contacto: <a href="mailto:juancabral.eb@academia.umb.edu.co">juancabral.eb@academia.umb.edu.co</a></p>
+            <p>&copy; 2025 - Blog Personal</p>
+        </div>
+    </footer>
+</body>
+</html>
