@@ -85,7 +85,7 @@ Clonar un repositorio es el proceso de copiar todo el contenido de un proyecto d
    - Haz clic en **Code** y copia el enlace HTTPS
 5. Clona el repositorio:
    ```bash
-   git clone https://github.com/JCbriol04/IngeWebA3.git
+   git clone https://github.com/JCbral04/IngeWebA3.git
    ```
 6. Accede al proyecto:
    ```bash
