@@ -23,7 +23,7 @@ Este es el backend de un sistema de gestión de paquetes desarrollado como parte
 
 1. Clona el repositorio:
    ```bash
-   git clone [URL_DEL_REPOSITORIO]
+   git clone https://github.com/JCbral04/IngeWebA3/tree/main/Guia%205/SERVER
    cd SERVER
    ```
 
